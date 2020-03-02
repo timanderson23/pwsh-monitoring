@@ -1,0 +1,147 @@
+**********************
+PowerShell transcript start
+Start time: 20200302162652
+Username: TEC\gMSA_scripts$
+RunAs User: TEC\gMSA_scripts$
+Configuration Name: 
+Machine: SCRIPTS-01 (Microsoft Windows NT 10.0.14393.0)
+Host Application: C:\Program Files\PowerShell\6\pwsh.dll -NoProfile D:\git\pwsh-monitoring\automated\pki-health-check\pki-health-check.ps1
+Process ID: 4004
+PSVersion: 6.2.1
+PSEdition: Core
+GitCommitId: 6.2.1
+OS: Microsoft Windows 10.0.14393 
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.10032.0, 6.2.1
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+Transcript started, output file is d:\git\pwsh-monitoring\pki-health-check\output.txt
+
+[pki-health-check.ps1]
+
+Testing CRL/AIA Retrieval
+
+CRL Distribution Point: http://crl.talquinelectric.com/CertEnroll
+
+[Authority Information Access]
+	http://crl.talquinelectric.com/CertEnroll/ca-root-01_CA-ROOT-01-CA(3).crt (
+Success
+)
+	http://crl.talquinelectric.com/CertEnroll/ca-sub-01.talquinelectric.com_talquinelectric-CA-SUB-01-CA(2).crt (
+Success
+)
+	http://crl.talquinelectric.com/CertEnroll/ca-sub-02.talquinelectric.com_talquinelectric-CA-SUB-02-CA(2).crt (
+Success
+)
+
+[CRL Distribution Point]
+	http://crl.talquinelectric.com/CertEnroll/CA-ROOT-01-CA(3).crl (
+Success
+)
+	http://crl.talquinelectric.com/CertEnroll/talquinelectric-CA-SUB-01-CA(2).crl (
+Success
+)
+	http://crl.talquinelectric.com/CertEnroll/talquinelectric-CA-SUB-01-CA(2)+.crl (
+Success
+)
+	http://crl.talquinelectric.com/CertEnroll/talquinelectric-CA-SUB-02-CA(2).crl (
+Success
+)
+	http://crl.talquinelectric.com/CertEnroll/talquinelectric-CA-SUB-02-CA(2)+.crl (
+Success
+)
+
+CRL Distribution Point: http://ca-sub-01.talquinelectric.com/CertEnroll
+
+[Authority Information Access]
+	http://ca-sub-01.talquinelectric.com/CertEnroll/ca-root-01_CA-ROOT-01-CA(3).crt (
+Success
+)
+	http://ca-sub-01.talquinelectric.com/CertEnroll/ca-sub-01.talquinelectric.com_talquinelectric-CA-SUB-01-CA(2).crt (
+Success
+)
+	http://ca-sub-01.talquinelectric.com/CertEnroll/ca-sub-02.talquinelectric.com_talquinelectric-CA-SUB-02-CA(2).crt (
+Success
+)
+
+[CRL Distribution Point]
+	http://ca-sub-01.talquinelectric.com/CertEnroll/CA-ROOT-01-CA(3).crl (
+Success
+)
+	http://ca-sub-01.talquinelectric.com/CertEnroll/talquinelectric-CA-SUB-01-CA(2).crl (
+Success
+)
+	http://ca-sub-01.talquinelectric.com/CertEnroll/talquinelectric-CA-SUB-01-CA(2)+.crl (
+Success
+)
+	http://ca-sub-01.talquinelectric.com/CertEnroll/talquinelectric-CA-SUB-02-CA(2).crl (
+Success
+)
+	http://ca-sub-01.talquinelectric.com/CertEnroll/talquinelectric-CA-SUB-02-CA(2)+.crl (
+Success
+)
+
+CRL Distribution Point: http://ca-sub-02.talquinelectric.com/CertEnroll
+
+[Authority Information Access]
+	http://ca-sub-02.talquinelectric.com/CertEnroll/ca-root-01_CA-ROOT-01-CA(3).crt (
+Success
+)
+	http://ca-sub-02.talquinelectric.com/CertEnroll/ca-sub-01.talquinelectric.com_talquinelectric-CA-SUB-01-CA(2).crt (
+Success
+)
+	http://ca-sub-02.talquinelectric.com/CertEnroll/ca-sub-02.talquinelectric.com_talquinelectric-CA-SUB-02-CA(2).crt (
+Success
+)
+
+[CRL Distribution Point]
+	http://ca-sub-02.talquinelectric.com/CertEnroll/CA-ROOT-01-CA(3).crl (
+Success
+)
+	http://ca-sub-02.talquinelectric.com/CertEnroll/talquinelectric-CA-SUB-01-CA(2).crl (
+Success
+)
+	http://ca-sub-02.talquinelectric.com/CertEnroll/talquinelectric-CA-SUB-01-CA(2)+.crl (
+Success
+)
+	http://ca-sub-02.talquinelectric.com/CertEnroll/talquinelectric-CA-SUB-02-CA(2).crl (
+Success
+)
+	http://ca-sub-02.talquinelectric.com/CertEnroll/talquinelectric-CA-SUB-02-CA(2)+.crl (
+Success
+)
+
+Verifying state of CRL files
+\\ca-sub-01.talquinelectric.com\CertEnroll\talquinelectric-CA-SUB-01-CA(2).crl (
+OK (within 7 days since last publish)
+)
+\\ca-sub-01.talquinelectric.com\CertEnroll\talquinelectric-CA-SUB-01-CA(2)+.crl (
+OK (within 1 days since last publish)
+)
+\\ca-sub-01.talquinelectric.com\CertEnroll\talquinelectric-CA-SUB-02-CA(2).crl (
+OK (within 7 days since last publish)
+)
+\\ca-sub-01.talquinelectric.com\CertEnroll\talquinelectric-CA-SUB-02-CA(2)+.crl (
+OK (within 1 days since last publish)
+)
+\\ca-sub-02.talquinelectric.com\CertEnroll\talquinelectric-CA-SUB-01-CA(2).crl (
+OK (within 7 days since last publish)
+)
+\\ca-sub-02.talquinelectric.com\CertEnroll\talquinelectric-CA-SUB-01-CA(2)+.crl (
+OK (within 1 days since last publish)
+)
+\\ca-sub-02.talquinelectric.com\CertEnroll\talquinelectric-CA-SUB-02-CA(2).crl (
+OK (within 7 days since last publish)
+)
+\\ca-sub-02.talquinelectric.com\CertEnroll\talquinelectric-CA-SUB-02-CA(2)+.crl (
+OK (within 1 days since last publish)
+)
+sending report
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20200302162654
+**********************
